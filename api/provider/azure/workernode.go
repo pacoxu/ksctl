@@ -6,7 +6,7 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/to"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork"
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 )
 
 func scriptWP(privateIPlb, token string) string {

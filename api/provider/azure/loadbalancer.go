@@ -6,8 +6,8 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/to"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork"
-	log "github.com/kubesimplify/ksctl/api/logger"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 func scriptLB() string {

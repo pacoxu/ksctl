@@ -13,13 +13,13 @@ import (
 	"errors"
 	"fmt"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
 	"os"
 	"strings"
 	"time"
 
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 
 	"github.com/civo/civogo"
 )

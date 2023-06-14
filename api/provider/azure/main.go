@@ -12,8 +12,8 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-	log "github.com/kubesimplify/ksctl/api/logger"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 // TODO: add the VMSize as user defined option

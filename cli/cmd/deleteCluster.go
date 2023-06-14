@@ -8,10 +8,10 @@ Kubesimplify
 */
 
 import (
-	"github.com/kubesimplify/ksctl/api/azure"
-	"github.com/kubesimplify/ksctl/api/civo"
-	"github.com/kubesimplify/ksctl/api/local"
-	log "github.com/kubesimplify/ksctl/api/logger"
+	"github.com/kubesimplify/ksctl/api/provider/azure"
+	"github.com/kubesimplify/ksctl/api/provider/civo"
+	"github.com/kubesimplify/ksctl/api/provider/local"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 	"github.com/spf13/cobra"
 )
 

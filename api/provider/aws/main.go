@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 // fetchAPIKey returns the API key from the cred/civo file store

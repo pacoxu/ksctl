@@ -9,8 +9,8 @@ import (
 	"os"
 	"strings"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 func haCreateClusterHandler(ctx context.Context, logger log.Logger, obj *AzureProvider) error {

@@ -13,9 +13,9 @@ import (
 	"os"
 	"runtime"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 type CivoProvider struct {

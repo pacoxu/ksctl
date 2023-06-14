@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 )
 
 func generateDBPassword(passwordLen int) string {

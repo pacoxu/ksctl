@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/to"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 func scriptWithoutCP_1(dbEndpoint, pubIPlb string) string {

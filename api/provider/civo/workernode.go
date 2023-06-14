@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"time"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
 	"github.com/civo/civogo"
 )

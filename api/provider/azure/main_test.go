@@ -4,18 +4,19 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"os"
+	"reflect"
+	"testing"
+
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/compute/armcompute"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerservice/armcontainerservice"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/resources/armresources"
-	"os"
-	"reflect"
-	"testing"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-	logger "github.com/kubesimplify/ksctl/api/logger"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	logger "github.com/kubesimplify/ksctl/api/provider/logger"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 func TestValidRegions(t *testing.T) {
@@ -1600,7 +1601,7 @@ func TestAzureProvider_SwitchContext(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 	}
-    log := logger.Logger{}
+	log := logger.Logger{}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			provider := AzureProvider{
@@ -2184,7 +2185,7 @@ func Test_printer_Printer(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 	}
-    log := logger.Logger{}
+	log := logger.Logger{}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			p := printer{

@@ -8,8 +8,8 @@ import (
 
 	"github.com/civo/civogo"
 
-	"github.com/kubesimplify/ksctl/api/logger"
-	utils "github.com/kubesimplify/ksctl/api/utils"
+	"github.com/kubesimplify/ksctl/api/provider/logger"
+	utils "github.com/kubesimplify/ksctl/api/provider/utils"
 	"github.com/stretchr/testify/assert"
 )
 

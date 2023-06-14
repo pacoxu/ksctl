@@ -24,7 +24,7 @@ import (
 
 	"time"
 
-	"github.com/kubesimplify/ksctl/api/logger"
+	"github.com/kubesimplify/ksctl/api/provider/logger"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/terminal"
 )

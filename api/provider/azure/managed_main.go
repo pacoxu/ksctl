@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/to"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/containerservice/armcontainerservice"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 func managedDeleteClusterHandler(ctx context.Context, logging log.Logger, azureConfig *AzureProvider, showMsg bool) error {

@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"time"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
 	"github.com/civo/civogo"
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 )
 
 // scriptWithoutCP_1 script used to configure the control-plane-1 with no need of output inital

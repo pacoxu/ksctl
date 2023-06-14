@@ -14,9 +14,9 @@ import (
 	"runtime"
 	"time"
 
-	log "github.com/kubesimplify/ksctl/api/logger"
+	log "github.com/kubesimplify/ksctl/api/provider/logger"
 
-	util "github.com/kubesimplify/ksctl/api/utils"
+	util "github.com/kubesimplify/ksctl/api/provider/utils"
 	"sigs.k8s.io/kind/pkg/cluster"
 	"sigs.k8s.io/kind/pkg/errors"
 )
@@ -172,7 +172,7 @@ func CreateCluster(logging log.Logger, localConfig util.LocalProvider) error {
 	return nil
 }
 
-func (p printer) Printer(logging log.Logger,isHA bool, operation int) {
+func (p printer) Printer(logging log.Logger, isHA bool, operation int) {
 	preFix := "export "
 	if runtime.GOOS == "windows" {
 		preFix = "$Env:"
@@ -188,7 +188,7 @@ func (p printer) Printer(logging log.Logger,isHA bool, operation int) {
 	case 1:
 		logging.Note("Use the following command to unset KUBECONFIG")
 		if runtime.GOOS == "windows" {
-		    logging.Print(fmt.Sprintf("%sKUBECONFIG=\"\"\n", preFix))
+			logging.Print(fmt.Sprintf("%sKUBECONFIG=\"\"\n", preFix))
 		} else {
 			logging.Print("unset KUBECONFIG")
 		}

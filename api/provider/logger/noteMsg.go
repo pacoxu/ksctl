@@ -21,7 +21,7 @@ const (
 // in green colour
 func (logger *Logger) Info(message ...string) {
 
-    outputMsg := strings.Join(message, " ")
+	outputMsg := strings.Join(message, " ")
 
 	if logger.Verbose {
 		log.Printf("%s[INFO] %v%s", GREEN, outputMsg, RESET)
@@ -32,7 +32,7 @@ func (logger *Logger) Info(message ...string) {
 
 // Print plan text stdout
 func (logger *Logger) Print(message ...string) {
-    outputMsg := strings.Join(message, " ")
+	outputMsg := strings.Join(message, " ")
 	if logger.Verbose {
 		log.Println("[MSG] ", outputMsg)
 	} else {
@@ -44,7 +44,7 @@ func (logger *Logger) Print(message ...string) {
 // in blue colour
 func (logger *Logger) Note(message ...string) {
 
-    outputMsg := strings.Join(message, " ")
+	outputMsg := strings.Join(message, " ")
 	if logger.Verbose {
 		log.Printf("%s[NOTE] %v%s", BLUE_BOLD, outputMsg, RESET)
 	} else {
@@ -55,7 +55,7 @@ func (logger *Logger) Note(message ...string) {
 // Warn warning message to stdout
 // in yellow colour
 func (logger *Logger) Warn(message ...string) {
-    outputMsg := strings.Join(message, " ")
+	outputMsg := strings.Join(message, " ")
 	if logger.Verbose {
 		log.Printf("%s[WARN] %v%s", YELLOW, outputMsg, RESET)
 	} else {
@@ -66,7 +66,7 @@ func (logger *Logger) Warn(message ...string) {
 // Err error message to stdout
 // in red color
 func (logger *Logger) Err(message ...string) {
-    outputMsg := strings.Join(message, " ")
+	outputMsg := strings.Join(message, " ")
 	if logger.Verbose {
 		log.Printf("%s[ERR] %v%s", RED, outputMsg, RESET)
 	} else {

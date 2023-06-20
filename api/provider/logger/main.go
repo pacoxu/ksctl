@@ -10,5 +10,5 @@ type LogFactory interface {
 	Warn(...string)
 	Print(...string)
 	Err(...string)
-    Note(...string)
+	Note(...string)
 }

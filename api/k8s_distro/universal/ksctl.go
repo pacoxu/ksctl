@@ -106,7 +106,7 @@ func (this *Kubernetes) DeleteResourcesFromController() error {
 		time.Sleep(10 * time.Second)
 	}
 
-	time.Sleep(10 * time.Second) // to maintain a time gap for stable cluster and cloud resources
+	time.Sleep(30 * time.Second) // to maintain a time gap for stable cluster and cloud resources
 
 	this.StorageDriver.Logger().Success("[client-go] Done configuring Cluster to Scale down the no of workerplane to 1")
 	return nil
@@ -426,7 +426,7 @@ func (this *Kubernetes) KsctlConfigForController(kubeconfig, kubeconfigpath, clo
 		}
 	}
 
-	time.Sleep(10 * time.Second) // waiting till the cluster is stable
+	time.Sleep(30 * time.Second) // to maintain a time gap for stable cluster and cloud resources
 
 	if err := this.deploymentApply(ksctlServer, KSCTL_SYS_NAMESPACE); err != nil {
 		return err

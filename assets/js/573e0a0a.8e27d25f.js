@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2994],{679:s=>{s.exports=JSON.parse('{"label":"civo","permalink":"/ksctl/blog/tags/civo","allTagsPath":"/ksctl/blog/tags","count":1}')}}]);

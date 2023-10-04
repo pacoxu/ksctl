@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5045],{1403:s=>{s.exports=JSON.parse('{"label":"aws","permalink":"/ksctl/blog/tags/aws","allTagsPath":"/ksctl/blog/tags","count":1}')}}]);

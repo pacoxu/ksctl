@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4942],{3459:e=>{e.exports=JSON.parse('{"label":"kubernetes-client-go","permalink":"/ksctl/blog/tags/kubernetes-client-go","allTagsPath":"/ksctl/blog/tags","count":1}')}}]);
